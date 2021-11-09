@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+<div class="page" >
+<form method="post" action="php.php">
+
+
+    <div class="cadre">
+
+
+         <fieldset class="bien Info">
+            <legend class="titre ">Info de Bien</legend> <!-- Titre du fieldset --> 
+        <div class="element">
+            <input class="radio" type="radio" name="nature" value="Achat" id="Achat" /> <label for="Achat" >Achat</label> 
+            <input class="radio" type="radio" name="nature" value="Location" id="Location" /> <label for="Location" >Location</label>
+        </div>    <hr>
+            
+        <div class="element">
+            <input class="radio" type="radio" name="meuble" value="Meuble" id="meuble" /> <label for="meuble" >Meublé</label>
+            <input class="radio" type="radio" name="meuble" value="Vide" id="Vide" /> <label for="Vide" >Vide</label>
+        </div>     <hr>
+           
+
+             
+                <select  name="type" id="type">
+                    <option value="type">Type de Bien:</option>
+                    <option value="Appartement">Appartement</option>
+                    <option value="Studio">Studio</option>
+                    <option value="Villa">Villa</option>
+                    <option value="Triplex">Triplex</option>
+                    <option value="Duplex">Duplex</option>
+                    <option value="Bureau">Bureau</option>
+                    <option value="Magasin">Magasin</option>
+                    <option value="Terrain">Terrain</option>
+                    <option value="Maison">Maison</option>
+
+                </select>
+
+ <br>
+ 
+<div class="ctr">
+
+    <div class="content">
+        <p for="chambre">Nombre de Chambre:</p>
+        <input type="number" name="chambre" id="chambre" /> <br> 
+    </div>
+
+    <div class="content">
+        <p for="salon">Nombre de Salon:</p>
+        <input type="number" name="salon" id="salon" /> <br> 
+    </div>
+
+    <div class="content">
+        <p for="sdb">Nombre de SDB:</p>
+        <input type="number" name="sdb" id="sdb" />  <br> 
+    </div>
+
+    <div class="content">
+        <p for="superficie">Superficie Minimum:</p>
+        <input type="number" name="superficie" id="superficie" />  <br> 
+    </div>
+
+    <div class="content">
+        <p for="etage">Etage:</p>
+        <input type="number" name="etage" id="etage" />  <br> 
+    </div>
+
+    <div class="content">
+        <p for="quartier">Quartier:</p>
+        <input type="text" name="quartier" id="quartier" />  <br> 
+    </div>
+
+    <div class="content">
+        <p for="buget">Buget Max:</p>
+        <input type="number" name="buget" id="buget" />  <br> 
+    </div>
+
+    <div class="content">
+        <p for="duree">Durée:</p>
+        <input type="number" name="duree" id="duree" />  <br>
+    </div>
+
+    </div>
+
+        <p for="autre">Autre Critéres:</p>
+        <textarea name="autre" id="autre" cols="20" rows="2"></textarea>
+
+    
+  
+    
+
+
+    </fieldset>
+  
+    <fieldset class="bien personnel">
+        <legend class="titre">Info Personnel</legend> <!-- Titre du fieldset -->
+  
+       
+        <select  name="fonction" id="fonction">
+            <option value="selectione">Je suis un(e):</option>
+            <option value="salarier_prive">Salarier (Privé)</option>
+            <option value="salarier_public">Salarier (Publique)</option>
+            <option  value="etuiant">Etudiant(e)</option>
+            <option value="famille">Famille</option>
+            
+        </select>  <br>
+
+        <p for="nom">Nom et Prenom:</p>
+        <input  type="text" name="nom" id="nom" /> <br> 
+
+        <p for="tel">Numero de Téléphone:</p>
+        <input type="tel" name="tel" id="tel" required /> <br>
+
+        <p for="email">Email:</p>
+        <input type="email" name="email" id="email" /> <br>
+            
+
+    </fieldset>
+
+    <input class="submit" type="submit" name="submit" id="submit" />
+
+    </div>
+
+
+ </form>
+
+
+
+</div>
+
+</body>
+</html>
